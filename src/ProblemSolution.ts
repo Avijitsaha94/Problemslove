@@ -1,24 +1,24 @@
-// problem 1
+
 
 function formatString(input: string, toUpper: boolean = true): string {
     return toUpper ? input.toUpperCase() : input.toLowerCase();
   }
 
-// problem 2
+
 
 
   function filterByRating(items: { title: string; rating: number }[]): { title: string; rating: number }[] {
     return items.filter(item => item.rating >= 4);
   }
 
-//   problem 3
+
 
   function concatenateArrays<T>(...arrays: T[][]): T[] {
     return arrays.flat();
   }
 
 
-// problem 4
+
 
   class Vehicle {
     
@@ -37,7 +37,7 @@ function formatString(input: string, toUpper: boolean = true): string {
     }
   }
 
-//   problem 5
+
   
   class Car extends Vehicle {
     private model: string;
@@ -59,7 +59,6 @@ function formatString(input: string, toUpper: boolean = true): string {
     }
   }
 
-//   problem 6
 
   interface Product {
     name: string;
@@ -75,7 +74,6 @@ function formatString(input: string, toUpper: boolean = true): string {
 
 
 
-//   problem 7
 
 enum Day {
     Monday,
@@ -92,7 +90,7 @@ enum Day {
   }
 
 
-//   problem 8
+
 
 async function squareAsync(n: number): Promise<number> {
     return new Promise((resolve, reject) => {
